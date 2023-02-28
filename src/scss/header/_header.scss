@@ -1,0 +1,149 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header {
+    background-image: linear-gradient(to top, transparentize(v.$negro, 0.3) 0%, 
+        transparentize(v.$negro, 0.3) 100%), url('../img/header_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 10px solid v.$gris;
+
+}
+
+.barra {
+    padding-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+
+    
+    &__logo {
+        width: 9rem;
+        
+        @include m.tablet {
+            width: 12rem;
+        }
+        
+        @include m.desktop {
+            width: 14.8rem;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        gap: 1rem;
+        
+    }
+
+    &__select {
+        background-color: transparentize($color: v.$negro, $amount: 0.8);
+        color: v.$blanco;
+        padding: .4rem 1.6rem;
+        border-radius: 3px;
+    }
+
+    &__logear--boton {
+        @include m.boton(v.$primario, v.$blanco);
+        font-size: 1.4rem;
+        padding: .8rem 1.6rem;
+    }
+}
+
+.informacion {
+    color: v.$blanco;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+    
+    @include m.tablet {
+        margin-top: 10rem;
+        padding-bottom: 10rem;
+    }
+    
+    @include m.desktop {
+        margin-top: 20rem;
+        padding-bottom: 20rem;
+    }
+    
+    &__heading {
+        text-align: center;
+        font-size: 3.2rem;
+        margin-top: 7rem;
+        margin-bottom: 2rem;
+    
+        @include m.desktop {
+            font-size: 4.8rem;
+        }
+    }
+    
+    &__disfruta {
+        text-align: center;
+        font-size: 1.8rem;
+        margin: 0 auto 3rem auto;
+        width: 80%;
+    
+        @include m.desktop {
+            font-size: 2.4rem;
+        }
+    }
+    
+    &__disfruta--pregunta {
+        width: 80%;
+        margin: 0 auto 3rem auto;
+        text-align: center;
+        font-size: 1.8rem;
+    
+        @include m.desktop {
+            font-size: 2rem;
+            width: 95%;
+        }
+    }
+    
+    
+}
+
+.suscribe {
+    width: 80%;
+    margin: 0 auto;
+    
+    display: flex;
+    flex-direction: column;
+    
+    @include m.tablet {
+        flex-direction: row;
+        gap: 1rem;
+        
+        justify-content: center;
+    }
+    
+    &__inscribe {
+        padding: 1.5rem 1rem;
+        border: 1px solid darken(v.$blanco , 50);
+        border-radius: .5rem;
+        background-color: transparentize($color: v.$negro, $amount: 0.4);
+        color: v.$blanco;
+        max-width: 40rem;
+    
+        @include m.tablet {
+            width: 100%;
+        }
+    }
+    
+    &__submit {
+        @include m.boton(v.$primario, v.$blanco);
+        min-width: 15rem;
+        width: 15rem;
+        font-size: 1.8rem;
+        margin: 1.5rem auto 0 auto;
+    
+        @include m.tablet {
+            margin: 0;
+            font-size: 2.4rem;
+            width: 30rem;
+        }
+        
+        @include m.desktop {
+            width: 25rem;
+        }
+    }
+}
+

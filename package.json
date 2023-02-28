@@ -1,0 +1,25 @@
+{
+  "name": "clon_netflix",
+  "version": "1.0.0",
+  "description": "Haciendo clon de Netflix para practicar habilidades",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Juan Carlos Torres",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "gulp": "^4.0.2",
+    "gulp-avif": "^1.1.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-webp": "^4.0.1",
+    "sass": "^1.58.3"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1% "
+  ]
+}
