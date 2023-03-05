@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header section">
         <div class="contenedor">
             <div class="barra">
                 <div class="barra__logo">
@@ -21,8 +21,8 @@
                 <div class="barra__nav">
                     <nav>
                         <select class="barra__select" name="" id="">
-                            <option value="espanol">Español</option>
-                            <option value="espanol">English</option>
+                            <option class="barra__espanol" value="espanol">Español</option>
+                            <option class="barra_english" value="espanol">English</option>
                         </select>
                     </nav>
     
@@ -46,6 +46,23 @@
             </div> <!--.info-->
         </div>
     </header>
+
+    <section class="disfrutar section">
+        <div class=" disfruta contenedor">
+            <div class="disfruta__info">
+                <h2 class="disfruta__heading">Disfruta en tu TV</h2>
+                <p class="disfruta__descripcion">Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más.</p>
+            </div>
+            
+            <div class="disfruta__media">
+                <img class="disfruta__imagen" src="build/img/tv_disfruta.png" alt="imagen tv">
+                <div class="disfruta__video">
+                    <video class="disfruta__video--tv" src="src/videos/tv_disfruta.m4v" muted loop autoplay playsinline></video>
+                </div>
+            </div>
+        </div>
+    </section>
+
     
 </body>
 </html>
