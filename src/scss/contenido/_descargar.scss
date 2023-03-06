@@ -1,0 +1,101 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.descargar {
+    background-color: v.$negro;
+    padding: 5.6rem 0;
+}
+
+.descarga {
+    color: v.$blanco;
+    display: flex;
+    flex-direction: column;
+
+    @include m.desktop {
+        flex-direction: row-reverse; 
+        align-items: center;       
+    }
+
+    &__heading {
+        text-align: center;
+        font-size: 3.2rem;
+        padding-inline: 2rem;
+        margin: 0;
+
+        @include m.desktop {
+            font-size: 4.8rem;
+            text-align: left;
+        }
+    }
+
+    &__descripcion {
+        text-align: center;
+        font-size: 1.8rem;
+        padding-inline: 2rem;
+
+        @include m.desktop {
+            font-size: 2.4rem;
+            text-align: left;
+            margin: 1.6rem 0 0 0;
+        };
+    }
+
+    &__media {
+        position: relative;
+    }
+    &__imagen-lead{
+        margin: 0 auto;
+    }
+
+    &__imagenes {
+        min-width: 15rem;
+        border: 2px solid v.$gris;
+        background-color: v.$negro;
+        border-radius: 0.75rem;
+        display: flex;
+        align-items: center;
+        padding: .4rem 1.4rem;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 60%;
+        overflow: hidden;
+        z-index: 100;
+    }
+
+    &__imagen-stranger{
+        min-width: 3.428rem;
+        max-width: 4.8rem;
+        height: fit-content;
+        margin-right: 1.6rem;
+    }
+
+    &__loader {
+        max-width: 4.8rem;
+        height: fit-content;
+        flex-grow: 0;
+    }
+}
+
+.movie {
+    margin-block: .48rem;
+    text-align: left;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    &__heading {
+        font-size: 1.4rem;
+        margin: 0;
+        font-weight: 700;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    &__downloading {
+        font-size: 1.2rem;
+        margin: 0;
+        margin-top: .5rem;
+        color: #0071eb;
+    }
+}
