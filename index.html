@@ -32,7 +32,7 @@
                 </div> <!--.barra__nav-->
             </div> <!--.barra-->
     
-            <div class="informacion">
+            <main class="informacion">
                 <h1 class="informacion__heading">Películas y series ilimitadas y mucho más</h1>
                 <p class="informacion__disfruta">Disfruta donde quieras. Cancela cuando quieras.</p>
                 <p class="informacion__disfruta--pregunta">¿Quieres ver Netflix ya? Ingresa tu email 
@@ -43,7 +43,7 @@
                     <input class="suscribe__inscribe" type="email" placeholder="Email">
                     <input class="suscribe__submit" type="submit" value="Comenzar >">
                 </nav>
-            </div> <!--.info-->
+            </main> <!--.info-->
         </div>
     </header>
 
@@ -57,7 +57,8 @@
             <div class="disfruta__media">
                 <img class="disfruta__imagen" src="build/img/tv_disfruta.png" alt="imagen tv">
                 <div class="disfruta__video">
-                    <video class="disfruta__video--tv" src="src/videos/tv_disfruta.m4v" muted loop autoplay playsinline></video>
+                    <video class="disfruta__video--tv" src="src/videos/tv_disfruta.m4v" muted 
+                    loop autoplay playsinline></video>
                 </div>
             </div>
         </div>
@@ -65,6 +66,7 @@
 
     <section class="descargar section">
         <div class="descarga contenedor">
+
             <div class="descarga__info">
                 <h2 class="descarga__heading">Descarga tus series para verlas offline</h2>
                 <p class="descarga__descripcion">Guarda tu contenido favorito y tendrás siempre algo para ver.</p>
@@ -80,13 +82,30 @@
                             <p class="movie__downloading">Descargando...</p>
                         </div>
                     <img class="descarga__loader" src="build/img/descarga_icon.gif" alt="gif descargando pelicula">
-
                 </div>
+            </div>
+
+        </div> <!--.descarga-->
+    </section>
+
+    <section class="disfrutar-quieras section">
+
+        <div class="disfruta-quieras contenedor">
+
+            <div class="disfruta-quieras__info">
+                <h2 class="disfruta-quieras__heading">Disfruta donde quieras</h2>
+                <p class="disfruta-quieras__descripcion">Películas y series ilimitadas 
+                    en tu teléfono, tablet, computadora y TV sin costo adicional.</p>
+            </div>
+
+            <div class="disfruta-quieras__media">
+                <img class="disfruta-quieras__imagen" src="build/img/descarga_imagen_1.png" alt="imagen netflix tv">
+                <video class="disfruta-quieras__video" src="src/videos/disfruta_video.m4v" 
+                loop autoplay playinline></video>
             </div>
         </div>
 
     </section>
-
     
 </body>
 </html>

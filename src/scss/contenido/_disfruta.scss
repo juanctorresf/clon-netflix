@@ -2,19 +2,24 @@
 @use "base/mixins" as m;
 
 .disfrutar {
-    background-color: v.$negro;
-    padding: 5.6rem 0;   
-
+    background-color: v.$negro;  
 }
 .disfruta {
     display: flex;
     flex-direction: column;
+    padding: 5.6rem 0;
 
     @include m.desktop {
         flex-direction: row;
-        align-items: center;        
+        align-items: center; 
+        gap: 1.2rem;       
     }
 
+    &__info {
+        @include m.desktop {
+            flex-basis: 50%;
+        }
+    }
     &__heading {
         color: v.$blanco;
         font-size: 3.2rem;
@@ -23,6 +28,7 @@
 
         @include m.desktop {
             font-size: 4.8rem;
+            text-align: left;
         }
     }
     
@@ -34,6 +40,7 @@
 
         @include m.desktop {
             font-size: 2.4rem;
+            text-align: left;
         }
     }
     
