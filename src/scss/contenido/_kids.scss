@@ -1,66 +1,54 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
-
-.disfrutar-quieras {
+.kid-profile {
     background-color: v.$negro;
     color: v.$blanco;
 }
 
-.disfruta-quieras {
-    text-align: center;
+.kids {
     display: flex;
     flex-direction: column;
 
     @include m.desktop {
-        flex-direction: row;
+        flex-direction: row-reverse;
         align-items: center;
-        gap: 1.2rem;
+        gap: 1.2rem
     }
-
 
     &__info {
         flex-basis: 50%;
     }
 
     &__heading {
+        text-align: center;
         margin: 0;
-        font-size: 3.2rem;
+        padding-inline: 3rem;
 
         @include m.desktop {
             font-size: 4.8rem;
+            padding: 0;
             text-align: left;
-            padding-left: 3rem;
         }
     }
 
     &__descripcion {
-        font-size: 1.8rem;
+        text-align: center;
         padding-inline: 3rem;
 
         @include m.desktop {
             font-size: 2.4rem;
             text-align: left;
+            padding: 0;
         }
     }
 
-    &__media {
-        position: relative;
-        flex-basis: 50%;  
+    &__media{
+
     }
 
     &__imagen {
+        width: 95%;
         margin: 0 auto;
-        position: relative;
-        z-index: 1;
-    }
-
-    &__video {
-        position: absolute;
-        width: 60%;
-        max-width: 40rem;
-        top: 10%;
-        left: 50%;
-        transform: translateX(-50%);
     }
 }

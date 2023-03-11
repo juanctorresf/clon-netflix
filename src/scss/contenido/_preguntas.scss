@@ -1,0 +1,15 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.preguntas-freq {
+    background-color: v.$negro;
+    color: v.$blanco;
+}
+
+.pregunta {
+
+
+    &__heading {
+        text-align: center;
+    }
+}

@@ -9,8 +9,7 @@
     color: v.$blanco;
     display: flex;
     flex-direction: column;
-    padding: 5.6rem 0;
-
+    
     @include m.desktop {
         flex-direction: row-reverse; 
         align-items: center;   

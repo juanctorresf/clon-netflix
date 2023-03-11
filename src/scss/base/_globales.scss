@@ -15,7 +15,7 @@ body {
 
 p {
     color: v.$blanco;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
 }
 
 .contenedor {
@@ -26,6 +26,10 @@ p {
 
 a {
     text-decoration: none;
+}
+
+li {
+    list-style: none;
 }
 
 img {
@@ -49,13 +53,17 @@ h1 {
 }
 
 h2 {
-    font-size: 3.6rem;
+    font-size: 3.2rem;
 }
 
 h3 {
-    font-size: 3.2rem;
+    font-size: 3rem;
 }
 
 .section {
     border-bottom: 1rem solid v.$gris;
+}
+
+.pd-5 {
+    padding: 5.6rem 0;
 }
