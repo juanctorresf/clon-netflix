@@ -1,0 +1,64 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.footer {
+    background-color: v.$negro;
+    padding: 3rem 0;
+    
+    &__info {
+        
+    }
+    
+    &__telefono {
+    }
+    
+    &__preguntaTel {
+        margin: 0;
+        font-size: 1.6rem;
+        color: v.$grisLink;
+        padding: 1.2rem 0;
+    }
+    
+    &__telNum {
+        color: v.$grisLink;
+        text-decoration: underline;
+        font-size: 1.6rem;
+    }
+
+    &__links {
+        padding: 1.2rem 0;
+    }
+
+    &__link {
+        font-size: 1.4rem;
+        color: v.$grisLink;
+        text-decoration: underline;
+    }
+
+    &__links-lista {
+        @include m.grid(2, 1.2rem);
+        margin-bottom: 3rem;
+
+        @include m.tablet {
+            @include m.grid(3, 1.2rem)
+        }
+
+        @include m.desktop {
+            @include m.grid(4, 1.2rem)
+        }
+    }
+
+    &__copyright {
+        color: v.$grisLink;
+        font-size: 1.4rem;
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    &__autor {
+        color: v.$grisLink;
+        text-decoration: underline;
+    }
+
+}

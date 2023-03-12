@@ -13,25 +13,45 @@
 <body>
     <header class="header section">
         <div class="contenedor">
-            <div class="barra">
 
+            <div class="barra">
                 <div class="barra__logo">
                     <img src="build/img/Netflix_2015_logo.svg" alt="logo netflix">
                 </div>
     
                 <div class="barra__nav">
-                    <nav>
+
+                    <div class="barra__nav-lang">
+                        <label class="barra__escoge">Selecciona un idioma</label>
+
+                        <div class="barra__logo-language">
+                            <svg class="barra__logo-lang" width="35" height="35" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2.25A9.75 9.75 0 0 0 2.25 12c0 5.384 4.365 9.75 9.75 9.75 5.384 0 9.75-4.366 9.75-9.75 0-5.385-4.366-9.75-9.75-9.75Z"></path>
+                                <path d="M12 2.25c-2.722 0-5.28 4.365-5.28 9.75 0 5.384 2.56 9.75 5.281 9.75 2.722 0 5.282-4.366 5.282-9.75 0-5.385-2.56-9.75-5.282-9.75Z"></path>
+                                <path d="M5.5 5.5C7.293 6.773 9.55 7.532 12 7.532c2.451 0 4.708-.76 6.5-2.032"></path>
+                                <path d="M18.5 18.5c-1.792-1.272-4.049-2.031-6.5-2.031-2.45 0-4.707.759-6.5 2.031"></path>
+                                <path d="M12 2.25v19.5"></path>
+                                <path d="M21.75 12H2.25"></path>
+                            </svg>
+                        </div>
+                    
                         <select class="barra__select" name="" id="">
                             <option class="barra__espanol" value="espanol">Español</option>
-                            <option class="barra_english" value="espanol">English</option>
+                            <option class="barra__english" value="espanol">English</option>
                         </select>
-                    </nav>
-    
+
+                        <div class="barra__flecha">
+                            <svg class="barra__flecha--abajo" width="35" height="35" fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m12 14-4-4h8l-4 4Z"></path>
+                            </svg>
+                        </div>
+                    </div> <!--.barra__nav-lang-->
+                    
                     <div class="barra__logear">
                         <button class="barra__logear--boton">Iniciar sesión</button>
                     </div>
-                </div> <!--.barra__nav-->
 
+                </div> <!--.barra__nav-->
             </div> <!--.barra-->
     
             <main class="informacion">
@@ -126,28 +146,236 @@
     </section>
 
     <section class="preguntas-freq section">
+        <div class="preguntas contenedor pd-5">
+            <h2 class="preguntas__heading">Preguntas frecuentes</h2>
 
-        <div class="pregunta contenedor pd-5">
-            <h2 class="pregunta__heading">Preguntas frecuentes</h2>
-
-            <div class="lista-preguntas">
+            <div class="preguntas__lista">
                 <ul>
-                    <li>
-                        <h3>
-                            <button>
-                                <span>¿Qué es Netflix?</span>
-                                <svg width="35" height="35" fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <li class="pregunta">
+                        <h3 class="pregunta__h3">
+                            <button class="pregunta__boton">
+                                <span class="pregunta__heading">¿Qué es Netflix?</span>
+                                <svg class="pregunta__img-abrir" width="35" height="35" fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M19 11h-6V5a1 1 0 0 0-2 0v6H5a1 1 0 0 0 0 2h6v6a1 1 0 0 0 2 0v-6h6a1 1 0 0 0 0-2Z"></path>
                                 </svg>
                             </button>
+
+                            <div class="pregunta__descripcion">
+                                <span>
+                                    Netflix es un servicio de streaming que ofrece 
+                                    una gran variedad de películas, series y 
+                                    documentales premiados en casi cualquier pantalla 
+                                    conectada a internet.
+                                    <br>
+                                    <br>
+                                    Todo lo que quieras ver, sin límites ni comerciales, 
+                                    a un costo muy accesible. Siempre hay algo nuevo por 
+                                    descubrir, ¡y todas las semanas se agregan más 
+                                    películas y series!
+                                </span>
+                            </div>
                         </h3>
-    
-                    </li>
+                    </li> <!--.pregunta-->
+
+                    <li class="pregunta">
+                        <h3 class="pregunta__h3">
+                            <button class="pregunta__boton">
+                                <span class="pregunta__heading">¿Cuánto cuesta Netflix?</span>
+                                <svg class="pregunta__img-abrir" width="35" height="35" fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 11h-6V5a1 1 0 0 0-2 0v6H5a1 1 0 0 0 0 2h6v6a1 1 0 0 0 2 0v-6h6a1 1 0 0 0 0-2Z"></path>
+                                </svg>
+                            </button>
+
+                            <div class="pregunta__descripcion">
+                                <span>
+                                    Disfruta Netflix en tu smartphone, tablet, smart TV, 
+                                    laptop o dispositivo de streaming, todo por una tarifa 
+                                    plana mensual. Planes desde $ 16.900 hasta $ 38.900 al mes. 
+                                    Sin costos adicionales ni contratos.
+                                </span>
+                            </div>
+                        </h3>
+                    </li> <!--.pregunta-->
+
+                    <li class="pregunta">
+                        <h3 class="pregunta__h3">
+                            <button class="pregunta__boton">
+                                <span class="pregunta__heading">¿Dónde puedo ver Netflix?</span>
+                                <svg class="pregunta__img-abrir" width="35" height="35" fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 11h-6V5a1 1 0 0 0-2 0v6H5a1 1 0 0 0 0 2h6v6a1 1 0 0 0 2 0v-6h6a1 1 0 0 0 0-2Z"></path>
+                                </svg>
+                            </button>
+
+                            <div class="pregunta__descripcion">
+                                <span>
+                                    Disfruta donde quieras, cuando quieras. Inicia sesión en 
+                                    tu cuenta de Netflix para ver contenido al instante a 
+                                    través de netflix.com desde tu computadora personal o 
+                                    en cualquier dispositivo con conexión a internet que 
+                                    cuente con la app de Netflix, como smart TV, smartphones, 
+                                    tablets, reproductores multimedia y consolas de juegos.
+                                    <br>
+                                    <br>
+                                    Además, puedes descargar tus series favoritas con iOS, 
+                                    Android o la app para Windows 10. Con la función de 
+                                    descarga, puedes ver donde vayas y sin conexión a internet. 
+                                    Lleva Netflix contigo adonde sea.
+                                </span>
+                            </div>
+                        </h3>
+                    </li> <!--.pregunta-->
+
+                    <li class="pregunta">
+                        <h3 class="pregunta__h3">
+                            <button class="pregunta__boton">
+                                <span class="pregunta__heading">¿Cómo cancelo?</span>
+                                <svg class="pregunta__img-abrir" width="35" height="35" fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 11h-6V5a1 1 0 0 0-2 0v6H5a1 1 0 0 0 0 2h6v6a1 1 0 0 0 2 0v-6h6a1 1 0 0 0 0-2Z"></path>
+                                </svg>
+                            </button>
+
+                            <div class="pregunta__descripcion">
+                                <span>
+                                    Netflix es flexible. Sin contratos molestos ni compromisos. 
+                                    Cancela la membresía online con solo dos clics. No hay cargos 
+                                    por cancelación. Empieza y termina cuando quieras.
+                                </span>
+                            </div>
+                        </h3>
+                    </li> <!--.pregunta-->
+
+                    <li class="pregunta">
+                        <h3 class="pregunta__h3">
+                            <button class="pregunta__boton">
+                                <span class="pregunta__heading">¿Qué puedo ver en Netflix?</span>
+                                <svg class="pregunta__img-abrir" width="35" height="35" fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 11h-6V5a1 1 0 0 0-2 0v6H5a1 1 0 0 0 0 2h6v6a1 1 0 0 0 2 0v-6h6a1 1 0 0 0 0-2Z"></path>
+                                </svg>
+                            </button>
+
+                            <div class="pregunta__descripcion">
+                                <span>
+                                    Netflix tiene un amplio catálogo de películas, series, 
+                                    documentales, animes, originales premiados y más. Todo lo 
+                                    que quieras ver, cuando quieras.
+                                </span>
+                            </div>
+                        </h3>
+                    </li> <!--.pregunta-->
+
+                    <li class="pregunta">
+                        <h3 class="pregunta__h3">
+                            <button class="pregunta__boton">
+                                <span class="pregunta__heading">¿Es bueno Netflix para los niños?</span>
+                                <svg class="pregunta__img-abrir" width="35" height="35" fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 11h-6V5a1 1 0 0 0-2 0v6H5a1 1 0 0 0 0 2h6v6a1 1 0 0 0 2 0v-6h6a1 1 0 0 0 0-2Z"></path>
+                                </svg>
+                            </button>
+
+                            <div class="pregunta__descripcion">
+                                <span>
+                                    La experiencia de Netflix para niños está incluida en la 
+                                    membresía para que los padres tengan el control mientras 
+                                    los peques disfrutan series y películas familiares en su 
+                                    propio espacio.
+                                    <br>
+                                    <br>
+                                    Los perfiles para niños incluyen controles parentales 
+                                    protegidos por PIN que te permiten restringir el 
+                                    contenido que pueden ver los niños en función de la 
+                                    clasificación por edad y bloquear determinados títulos
+                                    que no quieras que los niños vean.
+                                </span>
+                            </div>
+                        </h3>
+                    </li> <!--.pregunta-->
                 </ul>
+
+            </div> <!--.preguntas__listas-->
+
+            <!--SUSCRIBE EMAIL-->
+            <p class="informacion__disfruta--pregunta">¿Quieres ver Netflix ya? Ingresa tu email 
+                para crear una cuenta o reiniciar tu membresía de Netflix.
+            </p>
+
+            <nav class="suscribe">
+                <input class="suscribe__inscribe" type="email" placeholder="Email">
+                <input class="suscribe__submit" type="submit" value="Comenzar >">
+            </nav>
+
+        </div> <!--.preguntas-->
+    </section>
+
+    <footer class="footer">
+        <div class="footer__info contenedor">
+
+            <div class="footer__telefono">
+                <p class="footer__preguntaTel">¿Preguntas? Llama al <a class="footer__telNum" 
+                    href="tel:018009171564">01 800917 1564</a>
+                </p>
             </div>
 
-        </div>
+            <div class="footer__links">
+                <ul class="footer__links-lista">
+                    <li><a class="footer__link" href="#">Preguntas frecuentes</a></li>
+                    <li><a class="footer__link" href="#">Términos de las tarjetas de regalo</a></li>
+                    <li><a class="footer__link" href="#">Centro de ayuda</a></li>
+                    <li><a class="footer__link" href="#">Cuenta</a></li>
+                    <li><a class="footer__link" href="#">Prensa</a></li>
+                    <li><a class="footer__link" href="#">Relaciones con inversionistas</a></li>
+                    <li><a class="footer__link" href="#">Comprar tarjetas de regalo</a></li>
+                    <li><a class="footer__link" href="#">Formas de ver</a></li>
+                    <li><a class="footer__link" href="#">Términos de uso</a></li>
+                    <li><a class="footer__link" href="#">Privacidad</a></li>
+                    <li><a class="footer__link" href="#">Preferencias de cookies</a></li>
+                    <li><a class="footer__link" href="#">Información corporativa</a></li>
+                    <li><a class="footer__link" href="#">Contáctanos</a></li>
+                    <li><a class="footer__link" href="#">Prueba de velocidad</a></li>
+                    <li><a class="footer__link" href="#">Avisos legales</a></li>
+                    <li><a class="footer__link" href="#">Solo en Netflix</a></li>
+                    <li><a class="footer__link" href="#"></a></li>
+                    <li><a class="footer__link" href="#"></a></li>
+                </ul>
+            </div> <!--.footer__links-->
 
-    </section>
+            <div class="footer__language">
+
+                <div class="barra__nav-lang">
+                    <label class="barra__escoge">Selecciona un idioma</label>
+
+                    <div class="barra__logo-language">
+                        <svg class="barra__logo-lang" width="35" height="35" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2.25A9.75 9.75 0 0 0 2.25 12c0 5.384 4.365 9.75 9.75 9.75 5.384 0 9.75-4.366 9.75-9.75 0-5.385-4.366-9.75-9.75-9.75Z"></path>
+                            <path d="M12 2.25c-2.722 0-5.28 4.365-5.28 9.75 0 5.384 2.56 9.75 5.281 9.75 2.722 0 5.282-4.366 5.282-9.75 0-5.385-2.56-9.75-5.282-9.75Z"></path>
+                            <path d="M5.5 5.5C7.293 6.773 9.55 7.532 12 7.532c2.451 0 4.708-.76 6.5-2.032"></path>
+                            <path d="M18.5 18.5c-1.792-1.272-4.049-2.031-6.5-2.031-2.45 0-4.707.759-6.5 2.031"></path>
+                            <path d="M12 2.25v19.5"></path>
+                            <path d="M21.75 12H2.25"></path>
+                        </svg>
+                    </div>
+                
+                    <select class="barra__select" name="" id="">
+                        <option class="barra__espanol" value="espanol">Español</option>
+                        <option class="barra_english" value="espanol">English</option>
+                    </select>
+
+                    <div class="barra__flecha">
+                        <svg class="barra__flecha--abajo" width="35" height="35" fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m12 14-4-4h8l-4 4Z"></path>
+                        </svg>
+                    </div>
+
+                </div> <!--.barra__nav-lang-->
+
+            </div> <!--.footer__language-->
+
+            <p class="footer__copyright">Netflix Colombia - This clon is developed by 
+                <a class="footer__autor" href="https://www.linkedin.com/in/juan-torres-devv/" target="_blank">Juan C.</a>
+            </p>
+        </div> <!--.footer__info-->
+
+    </footer>
+
+    <script src="js/app.js"></script>
 </body>
-</html>
+</html> 

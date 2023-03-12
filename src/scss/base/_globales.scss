@@ -19,7 +19,7 @@ p {
 }
 
 .contenedor {
-    width: 95%;
+    width: 90%;
     max-width: 1500px;
     margin: 0 auto;
 }
@@ -28,6 +28,10 @@ a {
     text-decoration: none;
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+}
 li {
     list-style: none;
 }
