@@ -42,6 +42,8 @@
         border: none;
         padding: 2.4rem;
         margin-bottom: .2rem;
+        position: relative;
+        z-index: 2;
         transition-property: background-color;
         transition-duration: .3s;
 
@@ -52,19 +54,26 @@
     }
 
     &__heading {
-        display: block;
+        display: inline-block;
         text-align: left;
         color: v.$blanco;
         font-size: 1.8rem;
+        position: relative;
+        z-index: -200;
+
 
         @include m.desktop {
             font-size: 2.4rem;
         }
-    }
+    } 
 
     &__img-abrir {
-        display: block;
+        display: inline-block;
         width: 2rem;
+        position: relative;
+        z-index: -2;
+        transition-property: transform;
+        transition-duration: .2s;
 
         @include m.desktop {
             width: 3.4rem;
@@ -79,8 +88,18 @@
         font-size: 1.8rem;
         font-weight: 400;
         padding: 2.4rem;
+        transition-property: all;
+        transition-duration: .3s;
+        height: auto;
 
-        display: none;
+        &.hide {
+            height: 0;
+            padding: 0;
+            opacity: 0;
+            background-color: v.$negro;
+            color: v.$negro;
+            // display: none;
+        }
 
         @include m.desktop {
             font-size: 2.4rem;
