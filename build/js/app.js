@@ -8,7 +8,7 @@ const preguntaDescripcion = document.querySelectorAll('.pregunta__descripcion');
 const imgAbrir = document.querySelectorAll('#imgAbrir');
 
 // Event Listener
-window.addEventListener('resize', cambioIdioma);
+window.addEventListener('resize', addIdioma);
 document.addEventListener('DOMContentLoaded', addIdioma );
 
 
@@ -19,19 +19,22 @@ preguntaBoton.forEach( (boton, i) => {
     boton.addEventListener('click', () => {
         // Verifica que si no se muestra la descripcion al hacer click
         if(preguntaDescripcion[i].classList.contains('hide')) {
-            // itera sobre todas las descripciones y agrega la clase de ".hide"
+            // Cierra todas las descripiones
             preguntaDescripcion.forEach( preg => {
                 preg.classList.add('hide');
             } )
-            // Le quita la clase ".hide" para ser mostrada
+
+            // Mostrar descripcion donde se hizo click
             preguntaDescripcion[i].classList.remove('hide');
             
-            // Itera sobre cada imagen de "X" para quitar la clase ".open"
+            // Cambiar rotación de todos los botones para parecer a "+"
             imgAbrir.forEach( img => {
                 img.classList.remove('open');
             } )
-            // Agrega la clase ".open" en el boton que hagamos click.
+
+            // Cambia rotacion del boton cuando una descripcion de muestra "x"
             imgAbrir[i].classList.add('open');
+
         } else {
             preguntaDescripcion[i].classList.add('hide');
             imgAbrir[i].classList.remove('open');
@@ -40,16 +43,7 @@ preguntaBoton.forEach( (boton, i) => {
 })    
 
 
-
-
 // Funtions para quitar simbolo del idioma conforma al tamaño de pantalla
-function cambioIdioma() {
-    // width of screen
-    const screenWidth = window.innerWidth;
-
-    leeWidth(screenWidth);
-}
-
 function addIdioma() {
     // width of screen
     const screenWidth = window.innerWidth;
