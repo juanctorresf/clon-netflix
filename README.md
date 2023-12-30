@@ -2,6 +2,8 @@
 
 Este proyecto es un clon de la página principal de Netflix, desarrollado como parte de la práctica de habilidades en HTML, CSS (utilizando SASS), y JavaScript. Además, se han implementado diversas optimizaciones utilizando Gulp y sus complementos para mejorar la eficiencia del código y la optimización de recursos como imágenes.
 
+Ver [DEMO](https://juanctorresf.github.io/clon-netflix/).
+
 ## Características Principales
 - **HTML, CSS, SASS:** El proyecto utiliza HTML para la estructura, CSS y SASS para el diseño y estilos, proporcionando una experiencia visual similar a la página principal de Netflix.
 
